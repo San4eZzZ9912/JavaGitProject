@@ -3,7 +3,7 @@ package com.TV;
 import java.util.List;
 
 public class ViewerStatistics {
-    public static double averageAge(List<Viewer> viewers) {
+    public double averageAge(List<Viewer> viewers) {
         if (viewers == null || viewers.isEmpty()) {
             return 0.0;
         }

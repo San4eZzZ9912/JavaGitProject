@@ -27,7 +27,9 @@ public class Viewer {
     }
 
     public void addMovie(Cinema movie) {
-        watchedMovies.add(movie);
+        if (movie != null) {
+            watchedMovies.add(movie);
+        }
     }
 
     public List<Cinema> getWatchedMovies() {

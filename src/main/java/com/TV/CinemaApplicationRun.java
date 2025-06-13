@@ -27,7 +27,8 @@ public class CinemaApplicationRun {
         viewer5.addMovie(new Cinema("Movie6", "Drama", 1.7));
         viewers.add(viewer5);
 
-        double averageAge = ViewerStatistics.averageAge(viewers);
+        ViewerStatistics stats = new ViewerStatistics();
+        double averageAge = stats.averageAge(viewers);
         System.out.println("Средний возраст пользователей: " + averageAge);
 
         for (Viewer viewer : viewers) {
